@@ -1,0 +1,94 @@
+.table-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.table-viewport {
+  overflow: auto;
+  height: 300px;
+}
+
+table {
+  border-collapse:separate;
+  border-spacing: 0;
+  table-layout: fixed;
+  font-size: 12px;
+}
+
+table thead {
+  position: absolute;
+  z-index: 1;
+}
+
+table thead th {
+  border-bottom: 1px solid #ccc;
+}
+
+table thead th:first-child {
+  position: absolute;
+  height: 100%;
+  transform: translateX(-100%);
+  background: #fff;
+  box-sizing: border-box;
+}
+
+table thead th:not(:first-child){
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+  background: #fff;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+  padding: 10px;
+  vertical-align: top;
+}
+
+table thead th:last-child {
+  border-right: 1px solid #ccc;
+}
+
+table tbody th,
+table tbody td {
+  padding: 10px;
+  text-align: left;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  width: 200px;
+  vertical-align: top;
+}
+
+table tbody tr:first-of-type th {
+  border-top: none;
+}
+
+table tbody tr th:first-child {
+  position: absolute;
+}
+
+table tbody .group th {
+  background: #4697ec;
+}
+
+table tbody .group th:not(:first-child) {
+  border-left: 1px solid #4697ec;
+}
+
+table tbody tr td:last-child {
+  border-right: 1px solid #ccc;
+}
+
+table tbody tr:last-child > * {
+  border-bottom: 1px solid #ccc;
+}
+
+/* 一番左の列 */
+table thead tr th:first-child,
+table tbody tr th:first-child {
+  width: 70px;
+}
+
+/* その他 */
+table thead tr th:not(:first-child),
+table tbody tr th:not(:first-child) {
+  width: 200px;
+}
