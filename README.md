@@ -1,6 +1,18 @@
 # jquery-scrollable-table
 テーブルのスクロール可能にするjQueryプラグインです。
 
+## 動作済み環境
+### PC
+- Windows 10
+  - IE11 (追従が遅れ気味)
+  - GoogleChrome
+  - FireFox
+### スマートフォン
+- Android 8.0.0
+  - GoogleChrome
+- iOS 12.0.1
+  - Safari
+
 ## 使い方
 ```
 $('table').scrollableTable(options);
