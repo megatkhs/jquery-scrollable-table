@@ -32,44 +32,46 @@ const options = {
 ### 構造化
 セマンティックに構造化してください。
 ```
-<table>
-  <thead>
-    <tr>
-      <th>&nbsp;</th>
-      <th>項目名</th>
-      <th>項目名</th>
-      <th>項目名</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>項目名</th>
-      <td>項目</td>
-      <td>項目</td>
-      <td>項目</td>
-    </tr>
-    <tr>
-      <th>項目名</th>
-      <td>項目</td>
-      <td>項目</td>
-      <td>項目</td>
-    </tr>
-    <tr>
-      <th>項目名</th>
-      <td>項目</td>
-      <td>項目</td>
-      <td>項目</td>
-    </tr>
-    <tr>
-      <th>項目名</th>
-      <td>項目</td>
-      <td>項目</td>
-      <td>項目</td>
-    </tr>
-  </tbody>
-</table>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>&nbsp;</th>
+          <th>項目名</th>
+          <th>項目名</th>
+          <th>項目名</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>項目名</th>
+          <td>項目</td>
+          <td>項目</td>
+          <td>項目</td>
+        </tr>
+        <tr>
+          <th>項目名</th>
+          <td>項目</td>
+          <td>項目</td>
+          <td>項目</td>
+        </tr>
+        <tr>
+          <th>項目名</th>
+          <td>項目</td>
+          <td>項目</td>
+          <td>項目</td>
+        </tr>
+        <tr>
+          <th>項目名</th>
+          <td>項目</td>
+          <td>項目</td>
+          <td>項目</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 ```
 
 ### スタイリング
-style.cssしていただければと思います。(丸投げ)   
+style.cssを参考にしていただければと思います。(丸投げ)   
 .table-viewportの領域を指定するとスクロールできるようになります。

@@ -28,7 +28,6 @@
     $tbody_tr = $('tr', $tbody);
     $tbody_first_th = $('tr th:first-child', $tbody);
 
-    $container = $('<div class="table-container"></div>');
     $viewport = $('<div class="table-viewport"></div>');
 
     var config_map = Object.keys(config);
@@ -83,7 +82,8 @@
     $thead_first_th.css('width', tbody_first_th_width + 'px');
 
     var userAgent = navigator.userAgent.toLowerCase();
-    var adjust =  userAgent.indexOf('msie') != -1 || userAgent.indexOf('trident') > -1 ? 1 : 2;
+    var isSingleAdjust = userAgent.indexOf('msie') != -1 || userAgent.indexOf('trident') > -1;
+    var adjust =  isSingleAdjust ? 1 : 2;
     $thead_last_th.css('width', row_width - adjust + 'px');
 
     $tbody_tr.each(function(index, $tr) {
@@ -91,8 +91,7 @@
     });
 
     $viewport.append($table);
-    $container.append($viewport);
-    $parent.append($container);
+    $parent.append($viewport);
 
 
     var thead_height = $thead.height();
