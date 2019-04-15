@@ -22,6 +22,7 @@ table thead {
 
 table thead th {
   border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
 table thead th:first-child {
