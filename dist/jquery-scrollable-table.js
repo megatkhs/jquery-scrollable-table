@@ -111,7 +111,7 @@
   function restore() {
     $viewport.off('scroll');
     $(window).off('resize');
-    $container.remove();
+    $viewport.remove();
     $parent.append($original);
   }
 
